@@ -1,0 +1,15 @@
+import math
+import os
+import random
+import re
+import sys
+
+
+
+if __name__ == '__main__':
+    s = input()
+    from collections import Counter, OrderedDict
+    x =OrderedDict(Counter(s).most_common(3))
+    tuple_list = list(x.items())
+    for a in tuple_list:
+        print(*a)
